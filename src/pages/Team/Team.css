@@ -1,0 +1,107 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #212121;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #212121;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #4285f4; 
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-text .our {
+  display: block;
+  font-weight: 700;
+}
+
+.hero-text .members {
+  display: block;
+  font-weight: 800;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 6rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.filter label {
+  margin-right: 0.5rem;
+}
+
+.filter select {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+

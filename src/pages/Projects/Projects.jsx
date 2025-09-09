@@ -7,152 +7,88 @@ import Footer from '../../components/Footer';
 
 const projectData = [
   {
-    title: 'AI Based Chai Detector',
+    title: 'Sellr',
     status: 'Live',
-    details: 'Detects masala chai vs cutting chai using ML. Used steam density & cup color.',
+    details: 'Sellr App is a platform that allows students to buy, rent, sell, or borrow accessories and materials at reasonable prices within the campus. It is a convenient way for students to exchange goods with each other.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/1',
+    // bug1:false link
   },
   {
-    title: 'Drone Delivery for Momos',
+    title: 'Attendo',
+    status: 'Live',
+    details: 'Manage your minimum attendance criteria (75%) with the help of Attendo. With a friendly UI, managing attendance is simple as it can be. Also get reminders for classes and never miss them. With Attendo, keep a check on your attendance status.',
+    statusLink: '#',
+    viewLink: 'https://gdscnits.in/projects/0',
+        // bug2:false link
+
+  },
+  {
+    title: 'Code Share',
     status: 'Under Development',
-    details: 'Automated drone delivery system for late-night momos at NIT Silchar.',
+    details: 'Sending codes over messengers removes the indentations and it is also difficult to identify keywords. Well here is a chat based website which enables users to share their code, snippets and functions as well with super ease.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: '#',    // bug3:no link
+
   },
   {
-    title: 'Laundry Reminder Bot',
+    title: 'NITS Result Portal',
     status: 'Live',
-    details: 'A Telegram bot that reminds you when laundry is done. Screams when ignored.',
+    details: 'Announcement of results becomes a hectic process. Finding your name in the pdf and checking each subject\'s marks is not an easy task. Well here is a result portal for the Institute where the provisional results of all the semesters of a user can be accessed with a well organized visual representation.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/3',
   },
   {
-    title: 'Campus Gossip Analyzer',
+    title: 'Alumni Tracking',
     status: 'Under Development',
-    details: 'NLP-powered gossip detector that rates gossip truthfulness and sources.',
+    details: 'Acts as an interaction bridge between Alumni and the present students of NIT Silchar. It is basically a multi-portal application consisting of the Admin and Alumni Section.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/4',
   },
   {
-    title: 'Mess Menu Predictor',
-    status: 'Live',
-    details: 'Predicts daily mess quality using chef mood and lunar calendar.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'WiFi Rage Controller',
+    title: 'Medical Record Management',
     status: 'Under Development',
-    details: 'Cuts off your PC when WiFi drops to save you from rage-quitting.',
+    details: 'A medical records management portal where users can upload and access their medical records.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/5',
   },
   {
-    title: 'Sleep Detector for Lectures',
+    title: 'Efficacy',
     status: 'Live',
-    details: 'Keeps students awake in class using vibration-based alerts on drowsiness.',
+    details: 'Efficacy is a club event management app that allows club coordinators to schedule their events without collisions with previously scheduled ones. Efficacy 2.0 is already in the works.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/6',
   },
   {
-    title: 'College Fest Tracker',
+    title: 'Grafiny',
     status: 'Under Development',
-    details: 'Tracks events, lineups, and food stalls of every college fest around you.',
+    details: 'Grafiny allows you to share/view notes, assignments, lab works and other resources published by user. The resources can be upvoted/downvoted and also bookmarked.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/7',
   },
   {
-    title: 'Fake Notes Identifier',
-    status: 'Live',
-    details: 'Scans your notes and finds the ones copied from seniors or ChatGPT.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Auto Proxy VPN',
-    status: 'Live',
-    details: 'Instant VPN switcher for unstable exam-time network drops.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Canteen Line Optimizer',
+    title: 'Guidance Grid',
     status: 'Under Development',
-    details: 'Finds the best time to visit the canteen using crowd and hunger analytics.',
+    details: 'As the name speaks for itself, it is a platform that will enable you to seek assistance and guidance from your peers and seniors. It allows you to upvote, downvote, and bookmark the content of your choice and comes with a trending article section displaying posts based on public reception.',
     statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://gdscnits.in/projects/8',
   },
   {
-    title: 'Friend Availability Radar',
-    status: 'Live',
-    details: 'Shows when friends are free based on calendar + vibes.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Assignment Auto-Excuse Generator',
+    title: 'Mess Management',
     status: 'Under Development',
-    details: 'AI that emails your prof with perfect excuses on deadlines.',
+    details: 'One-stop solution to all your queries regarding the mess, the menu, the timings, and all. It will allow the users to interact with the mess remotely. A platform to manage the functioning of the hostel mess and ensure that the management is not messy.',
     statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Group Project Shamer',
-    status: 'Live',
-    details: 'Analyzes contribution and exposes freeloaders in the group.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Digital Attendance Faker',
-    status: 'Under Development',
-    details: 'Fakes blinking and nodding on Meet when you’re asleep.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Keyboard Heatmap Visualizer',
-    status: 'Live',
-    details: 'Analyzes key presses; reveals your dependency on Ctrl+C.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Fan Speed API',
-    status: 'Live',
-    details: 'Control hostel fan speed using API calls and smart plugs.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Anti-Stress Screamer App',
-    status: 'Under Development',
-    details: 'Convert your stress screams into relaxing whale sounds.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Zoom Background Faker',
-    status: 'Live',
-    details: 'Changes background to "studious mode" while you nap.',
-    statusLink: '#',
-    viewLink: '#',
-  },
-  {
-    title: 'Chair-Occupancy Detector',
-    status: 'Under Development',
-    details: 'Finds empty library chairs via pressure sensors and app.',
-    statusLink: '#',
-    viewLink: '#',
+    viewLink: 'https://www.nits.ac.in/', // bug4:false link
+
   },
 ];
 
 const Projects = () => {
   return (
+    <>
     <div className="projects-page">
        <Header />
-      <header className="header-placeholder"></header>
+      {/* <header className="header-placeholder"></header> */}
 
       <h1 className="projects-heading">OUR PROJECTS</h1>
 
@@ -173,9 +109,10 @@ const Projects = () => {
         ))}
       </div>
 
-       <Footer />
-      <footer className="footer-placeholder"></footer>
+       <footer className="footer-placeholder"></footer> 
     </div>
+       <Footer /> 
+    </>
   );
 };
 

@@ -59,29 +59,40 @@ import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import Events from "./pages/Events/Events";
 import Team from "./pages/Team/Team";
-import Error from "./pages/Error/Error";  
-// import "./index.scss"; // your global styles
+import Error from "./pages/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <Error />, // Optional: error fallback UI for route errors
-    children: [
-      { index: true, element: <Home /> }, // default route when path is "/"
-      { path: "home", element: <Home /> },
-      { path: "projects", element: <Projects /> },
-      { path: "events", element: <Events /> },
-      { path: "team", element: <Team /> },
-    ],
   },
   {
     path: "*",
     element: <Error />,
   },
+  {
+    path: "/projects",
+    element: <Projects />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/events",
+    element: <Events />,
+  },
+  {
+    path: "/team",
+    element: <Team />,
+  },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error("Failed to find the root element");
+}
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>

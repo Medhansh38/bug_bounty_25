@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.domains-simple-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 1rem;
+        font-family: 'Poppins', sans-serif;
+
+
+}
+
+.domains-simple-left, .domains-simple-right {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.domains-simple-left {
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.domain-section {
+  margin-bottom: 2.5rem;
+}
+
+.domain-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* ✅ Updated logo styling with your request */
+.domain-logo {
+  height: 5rem;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: auto 1rem;
+  object-fit: contain;
+  max-width: 5rem; /* Prevent stretching on wide containers */
+}
+
+.domain-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.domains-simple-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.domains-simple-right img {
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  object-fit: contain;
+}

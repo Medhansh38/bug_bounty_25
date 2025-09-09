@@ -1,3 +1,5 @@
+//------BUG=5------
+
 import React from 'react';
 import './Header_footer.css';
 import logo from '../assets/images/logo.png';

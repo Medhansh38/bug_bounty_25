@@ -20,7 +20,7 @@ const home = () => {
           <div className="circle"></div>
         </a>
 
-        <div className="text" style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <div className="text" >
           <div>
           <div className="title gdsc">
             <span className="gdsc-title-blue">G</span>

@@ -122,4 +122,54 @@
   gap: 2rem;
 }
 
-    
+    /* Mobile devices */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .team-section {
+    padding: 1rem;
+  }
+  
+  .section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .avatar img {
+    height: 16rem;
+  }
+  
+  .info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .position {
+    font-size: 1.1rem;
+  }
+  
+  .social-media {
+    gap: 1.5rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 45%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cards {
+    gap: 1.5rem;
+  }
+}
+
+/* Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: 22rem;
+  }
+}

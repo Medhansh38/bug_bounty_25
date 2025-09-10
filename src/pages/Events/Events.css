@@ -115,18 +115,148 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .events {
-    grid-template-columns: repeat(2, 1fr);
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .filter {
+    padding: 80px 20px 30px 20px;
+    font-size: 24px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .eventss {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  
+  .event-card {
+    padding: 15px;
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+  
+  .navbar {
+    padding: 12px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
-@media (max-width: 600px) {
-  .events {
-    grid-template-columns: 1fr;
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .filter {
+    padding: 90px 40px 40px 40px;
+    font-size: 32px;
+  }
+  
+  .eventss {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding: 60px 40px;
+  }
+  
+  .event-card img {
+    width: 200px;
+    height: 160px;
+  }
+  
+  .navbar {
+    padding: 15px 30px;
   }
 }
+
+/* Small laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .filter {
+    padding: 100px 80px 40px 80px;
+    font-size: 36px;
+  }
+  
+  .eventss {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 70px 80px;
+  }
+  
+  .event-card img {
+    width: 220px;
+    height: 180px;
+  }
+}
+
+/* Medium laptops (1025px to 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .filter {
+    padding: 100px 100px 40px 100px;
+  }
+  
+  .eventss {
+    padding: 80px 100px;
+    gap: 90px;
+  }
+}
+
+/* Fix for center-card class */
 .center-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Fixed typo: cnter → center */
+  align-items: center;  
+  text-align: center;
+}
+
+/* Fix for centering the 7th card */
+.eventss {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.event-card:nth-child(7) {
+  grid-column: 2; /* This will only work if you have exactly 7 items */
+}
+
+/* Better approach for odd-numbered grid items */
+@media (min-width: 1025px) {
+  .eventss:has(.event-card:nth-child(7):last-child) {
+    justify-content: center;
+  }
+  
+  .eventss:has(.event-card:nth-child(7):last-child) .event-card:nth-child(7) {
+    grid-column: 2;
+  }
+}
+
+/* Alternative: Use flexbox fallback for better centering */
+@media (max-width: 1024px) {
+  .eventss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .event-card {
+    /* flex: 0 0 calc(33.333% - 74px); Account for gap */
+    max-width: 300px;
+    margin: 0 10px 40px;
+  }
+}
+
+/* Fix for event-card typo in CSS selector */
+.event-card:nth-child(7) {
+  grid-column: 2;
+}.center-card {
   display: flex;
   flex-direction: column;
   justify-content: cnter;   /* vertical centering ,center typo*/

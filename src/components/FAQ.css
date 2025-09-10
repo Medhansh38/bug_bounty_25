@@ -60,3 +60,37 @@
 .faq-arrow.open svg {
   transform: rotate(180deg);
 }
+/* Mobile devices */
+@media (max-width: 480px) {
+  .faq-main .faq-head {
+    font-size: 1.8rem;
+    padding: 1.5rem 0;
+  }
+  
+  .accordion {
+    margin: 0.5rem 0.5rem;
+    padding: 0.8rem;
+  }
+  
+  .accordion-title p {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .faq-main .faq-head {
+    font-size: 2rem;
+  }
+  
+  .accordion {
+    margin: 0.5rem 0.8rem;
+  }
+}
+
+/* Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .faq-main .accordion-container {
+    max-width: 90%;
+  }
+}

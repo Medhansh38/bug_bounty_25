@@ -79,3 +79,200 @@
   font-size: 0.85rem;
   border-radius: 0.3rem;
 }
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 1.5rem;
+  }
+  
+  .projects-heading {
+    font-size: 10vw;
+    height: 10rem;
+    margin-top: 1.5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .project-card {
+    padding: 1.2rem;
+  }
+  
+  .project-header h2 {
+    font-size: 1.3rem;
+    width: 65%;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .projects-page {
+    padding: 3rem;
+  }
+  
+  .projects-heading {
+    font-size: 12vw;
+    height: 8rem;
+    margin-top: 1rem;
+  }
+  
+  .project-card {
+    padding: 1rem;
+  }
+  
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .project-header h2 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  
+  .project-details {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .view-button {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Small mobile devices (360px and below) */
+@media (max-width: 360px) {
+  .projects-page {
+    padding: 0.8rem;
+  }
+  
+  .projects-heading {
+    font-size: 14vw;
+    height: 6rem;
+    margin-top:3rem;
+  }
+  
+  .project-card {
+    padding: 0.8rem;
+  }
+  
+  .project-header h2 {
+    font-size: 1.1rem;
+  }
+  
+  .project-details {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .project-card {
+    padding: 2rem;
+  }
+  
+  .project-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .project-details {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large screens (1600px and above) */
+@media (min-width: 1600px) {
+  .projects-page {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Medium screens (between tablet and desktop) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+  
+  .project-card {
+    padding: 1.3rem;
+  }
+}
+
+/* Hover effects for devices that support hover */
+@media (hover: hover) {
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #333;
+    transition: background-color 0.3s ease;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .project-card {
+    transition: none;
+  }
+  
+  .view-button {
+    transition: none;
+  }
+}
+
+/* Dark mode support
+@media (prefers-color-scheme: dark) {
+  .projects-page {
+    background: white;
+    color: white;
+  }
+  
+  .project-card {
+    border-color: #444;
+    background-color: #2a2a2a;
+  }
+  
+  .view-button {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .view-button:hover {
+    background-color: #ddd;
+  }
+}
+
+/* Print styles 
+@media print {
+  .projects-page {
+    padding: 0;
+  }
+  
+  .project-card {
+    break-inside: avoid;
+    border: 1px solid #000;
+  }
+  
+  .view-button {
+    display: none;
+  }
+} */

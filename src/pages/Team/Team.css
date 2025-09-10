@@ -105,3 +105,213 @@ body {
   font-size: 0.9rem;
 }
 
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+  }
+  
+  .filters {
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-image img {
+    max-width: 300px;
+  }
+  
+  .filters {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .filter {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .filter select {
+    width: 100%;
+  }
+  
+  .navbar {
+    padding: 0.6rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+  
+  .logo {
+    height: 35px;
+  }
+}
+
+/* Small mobile devices (360px and below) */
+@media (max-width: 360px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-image img {
+    max-width: 250px;
+  }
+  
+  .nav-links {
+    gap: 0.8rem;
+  }
+  
+  .nav-links li a {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape mode for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    padding: 2rem;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-image img {
+    max-width: 250px;
+  }
+}
+
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 5rem 8rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 6rem;
+  }
+  
+  .filters {
+    padding: 2rem 8rem;
+  }
+}
+
+/* Extra large screens (1600px and above) */
+@media (min-width: 1600px) {
+  .hero {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 6rem 10rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 7rem;
+  }
+  
+  .filters {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 10rem;
+  }
+}
+
+/* Medium screens (between tablet and desktop) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 4rem 3rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+  
+  .hero-image img {
+    max-width: 450px;
+  }
+  
+  .filters {
+    padding: 1.5rem 3rem;
+  }
+}
+
+/* Hover effects for devices that support hover */
+@media (hover: hover) {
+  .nav-links li a:hover {
+    color: #4285f4;
+  }
+  
+  .filter select:hover {
+    border-color: #4285f4;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .nav-links li a {
+    transition: none;
+  }
+}
+
+
+/* Print styles */
+@media print {
+  .navbar {
+    display: none;
+  }
+  
+  .hero {
+    padding: 2rem 0;
+  }
+  
+  .hero-image {
+    display: none;
+  }
+  
+  .filters {
+    display: none;
+  }
+}

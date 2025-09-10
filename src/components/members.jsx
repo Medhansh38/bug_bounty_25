@@ -48,9 +48,9 @@ const members = () => {
             <div className="after-hover">
               <p className="domain">GDGC, NIT Silchar</p>
               <div className="social-media">
-               <a href="#!"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a href="#!"><FontAwesomeIcon icon={faGithub} /></a>
-                <a href="#!"><FontAwesomeIcon icon={faFacebookF} /></a>
+               <a href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href=""><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faFacebookF} /></a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ const members = () => {
                 <p className="domain">Domain</p>
                 <div className="social-media">
                   <a href="#!"><FontAwesomeIcon icon={faLinkedin} /></a>
-                <a href="#!"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://chatgpt.com/"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="#!"><FontAwesomeIcon icon={faFacebookF} /></a>
                 </div>
               </div>

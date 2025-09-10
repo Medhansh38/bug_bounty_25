@@ -95,11 +95,14 @@ return (
     </div>
 
     <div className="domains-simple-right">
-      <img
-        src="https://hadibuttt.github.io/GDSC-Portfolio-Site/img/main.png"
-        alt="All Domains"
-        style={{ width: '500px', height: '400px', objectFit: 'contain' }}
-      />
+     <a href="https://youtu.be/jP9IIxb8xTA?si=xfanvXyH8v_vCfi-" target="_blank" rel="noopener noreferrer">
+  <img
+    src="https://hadibuttt.github.io/GDSC-Portfolio-Site/img/main.png"
+    alt="All Domains"
+    style={{ width: '500px', height: '400px', objectFit: 'contain' }}
+  />
+</a>
+
     </div>
   </div>
 );

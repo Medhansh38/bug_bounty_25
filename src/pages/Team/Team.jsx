@@ -3,6 +3,7 @@ import "./Team.css"; // Assume you'll create this CSS similarly
 
 import Header from "../../components/Headerr";
 import Footer from "../../components/Footer";
+import Members from "../../components/members";
 
 // Import images (adjust paths as per your folder structure)
 import gdgcLogo from "../../assets/images/gdgclogo.jpg";
@@ -52,6 +53,7 @@ const Team = () => {
           </select>
         </div>
       </section>
+      <Members />
 
       {/* Footer */}
      <Footer />

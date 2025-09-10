@@ -1,0 +1,125 @@
+.card {
+    height: 26rem;
+    width: 20rem;
+    border-radius: 8px;
+    border: 0.5px solid #9a9494;
+    box-sizing: border-box;
+    box-shadow: -4px -4px 12px #4f4f4f33;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    margin: 0 min(0.5rem, 2vw);
+    position: relative; /* needed for absolute positioning */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .visible {
+    width: 100%;
+  }
+  
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 20rem;
+    top: 0;
+    transition: all 0.35s ease-in-out;
+    vertical-align: middle;
+    object-fit: cover;
+  }
+  .info h3 {
+    display: block;
+    font-size: 1.75rem;
+    margin: 0.5rem 0rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .position {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .after-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+  }
+  
+  .after-hover .domain {
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .social-media i {
+    font-size: 1.5rem;
+    transition: transform 0.20s ease-in-out;
+    color: black;
+  }
+  
+  .social-media i:hover {
+    transform: scale(1.4); 
+  }
+    .social-media a {
+        color:black;
+    }
+  .card:hover .after-hover {
+    transform: translateY(0);
+  }
+  
+  .card:hover .avatar img {
+    border-radius: 50%;
+    height: 14.5rem;
+    width: 14.5rem;
+    margin-top: 1rem;
+  }
+  .team-section {
+  padding: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+    

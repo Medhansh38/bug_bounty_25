@@ -42,7 +42,7 @@ const Events = () => {
       <section className="eventss">
         {/* Event 1 */}
         <div className="event-card">
-          <img src={androidLogo} alt="Android Compose Camp" />
+        <img src={androidLogo} alt="Android Compose Camp" />
           <p className="date">Jan 30, 2024</p>
           <h3>Android Compose Camp</h3>
           <p className="desc"></p>
@@ -80,7 +80,7 @@ const Events = () => {
 
         {/* Event 6 */}
         <div className="event-card">
-          <img src={htmlLogo} alt="GDSC Explore" />
+         <a href="https://ww7.123moviesfree.net/movie/zodiac-7544/"> <img src={htmlLogo} alt="GDSC Explore" /></a>
           <p className="date">Mar 30, 2024</p>
           <h3>GDSC Explore</h3>
           <p className="desc"></p>

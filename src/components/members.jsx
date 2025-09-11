@@ -75,6 +75,8 @@ const members = () => {
             "https://res.cloudinary.com/dnuhxx8aa/image/upload/f_auto,q_auto/cv2qenyihqktamqy6ynz",
             "https://res.cloudinary.com/dnuhxx8aa/image/upload/f_auto,q_auto/ds8e3ch89sbdhrhvu15r",
             "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827551/GDSC%20images/bedanta_-_EI_018_Bedanta_Kataki_bu2rny.jpg",
+            "https://hips.hearstapps.com/hmg-prod/images/elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=640:",
+            
             "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827555/GDSC%20images/debashish_buragohain_-_EE_029_DEBASISH_BURAGOHAIN_r2apek.jpg",
             "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827558/GDSC%20images/gaurav_-_EE_027_Gaurav_Bhushan_Kumar_k2djxq.jpg",
             "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827571/GDSC%20images/saptarshi_-_CSE_072_SAPTARSHI_ADHIKARI_out4pi.jpg",
@@ -93,7 +95,7 @@ const members = () => {
               <div className="after-hover">
                 <p className="domain">Domain</p>
                 <div className="social-media">
-                  <a href="#!"><FontAwesomeIcon icon={faLinkedin} /></a>
+                  <a href="https://www.reddit.com/"><FontAwesomeIcon icon={faLinkedin} /></a>
                 <a href="https://chatgpt.com/"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="#!"><FontAwesomeIcon icon={faFacebookF} /></a>
                 </div>

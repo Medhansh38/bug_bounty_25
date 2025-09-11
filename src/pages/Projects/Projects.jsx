@@ -57,7 +57,7 @@ const projectData = [
     status: 'Live',
     details: 'Efficacy is a club event management app that allows club coordinators to schedule their events without collisions with previously scheduled ones. Efficacy 2.0 is already in the works.',
     statusLink: '#',
-    viewLink: 'https://gdscnits.in/projects/6',
+    viewLink: 'https://gdscnits.in/projects/0',
   },
   {
     title: 'Grafiny',
@@ -71,7 +71,7 @@ const projectData = [
     status: 'Under Development',
     details: 'As the name speaks for itself, it is a platform that will enable you to seek assistance and guidance from your peers and seniors. It allows you to upvote, downvote, and bookmark the content of your choice and comes with a trending article section displaying posts based on public reception.',
     statusLink: '#',
-    viewLink: 'https://gdscnits.in/projects/8',
+    viewLink: 'https://leetcode.com/problems/reverse-linked-list/submissions/1766717153/',
   },
   {
     title: 'Mess Management',
@@ -90,7 +90,9 @@ const Projects = () => {
        <Header />
       {/* <header className="header-placeholder"></header> */}
 
-      <h1 className="projects-heading">OUR PROJECTS</h1>
+<a href="https://wvw-fmovies.com/" style={{ textDecoration: 'none' }}>
+  <h1 className="projects-heading">OUR PROJECTS</h1>
+</a>
 
       <div className="projects-grid">
         {projectData.map((proj, index) => (
